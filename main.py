@@ -38,7 +38,6 @@ def Sobel(image):
 
     return gX, gY, combined
 
-
 while True:
     ret, frame = cap.read()
 
