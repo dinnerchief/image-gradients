@@ -22,7 +22,6 @@ cv2.createTrackbar("overallThreshold", "Controls", 0, 255, update_thresholds)
 
 cap = cv2.VideoCapture(0)
 
-
 def Sobel(image):
     ksize = 3
 
@@ -37,7 +36,6 @@ def Sobel(image):
     combined = cv2.addWeighted(gX, 0.5, gY, 0.5, 0)
 
     return gX, gY, combined
-
 
 while True:
     ret, frame = cap.read()
